@@ -385,7 +385,6 @@ header {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: var(--morado);
     color: white;
     border-radius: 50%;
     text-decoration: none;
@@ -393,7 +392,6 @@ header {
 }
 
 .social-link:hover {
-    background: var(--verde);
     transform: translateY(-3px);
 }
 
