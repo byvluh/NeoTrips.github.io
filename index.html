@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Trips - Descubre tu próxima aventura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+              <!--   <div class="logo">
+                   Logo Neo Trips 
+                    <svg viewBox="0 0 375 375" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="375" height="375" fill="#fffeec"/>
+                        <path d="M217.33 168.94h27.44v17.99h-27.44z" fill="#cbd83b"/>
+                        <path d="M244.77 168.94h-27.44v17.99h27.44z" fill="#a88aed"/>
+                        <path d="M106.62 174.54s-.32.11-.8.27c-.48.17-1.12.39-1.76.62-.64.23-1.28.46-1.75.64-.23.09-.43.17-.57.22-.13.05-.21.08-.21.08l-.72-1.75s.08-.03.19-.07c.14-.05.34-.12.58-.21.49-.18 1.14-.4 1.78-.63.64-.23 1.29-.46 1.78-.62.49-.16.82-.27.82-.27l.61 1.78z" fill="#c2e2e7"/>
+                        <path d="M98.57 176.77c0 .61-1 .61-2.23.61s-2.23 0-2.23-.61 1-.61 2.23-.61 2.23 0 2.23.61z" fill="#c2e2e7"/>
+                        <path d="M96.34 162.95c-1.57 0-2.84-1.27-2.84-2.84s1.27-2.84 2.84-2.84 2.84 1.27 2.84 2.84-1.27 2.84-2.84 2.84zm5.51-3.37c-.25-6.98-10.77-6.98-11.02 0-.22 6.24 5.51 14.12 5.51 14.12s5.73-7.88 5.51-14.12z" fill="#c2e2e7"/>
+                    </svg>
+                </div> -->
+                <ul class="nav-links">
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#destinations">Destinos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Discover Your Next Adventure</h1>
+            <p>From pristine beaches to bustling cities, we craft unforgettable journeys tailored just for you</p>
+            <a href="#contact" class="btn">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">
+                Comprehensive travel solutions designed to make your journey seamless and unforgettable
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <h3>Personalized Packages</h3>
+                    <p class="service-subtitle">Tailored experiences crafted just for you</p>
+                    <p class="service-description">
+                        Our expert travel consultants work closely with you to understand your preferences, interests, and budget. 
+                        We create completely customized itineraries that reflect your unique travel style.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏨</div>
+                    <h3>Luxury Travel</h3>
+                    <p class="service-subtitle">Experience the world in ultimate comfort and style</p>
+                    <p class="service-description">
+                        Indulge in premium accommodations, exclusive experiences, and personalized service 
+                        that transforms your journey into a luxurious escape.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🧳</div>
+                    <h3>Professional Travel Consulting</h3>
+                    <p class="service-subtitle">Expert guidance from industry professionals</p>
+                    <p class="service-description">
+                        Benefit from our extensive knowledge and connections in the travel industry to 
+                        ensure every aspect of your trip is perfectly planned and executed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <h2 class="section-title">Explore Destinations</h2>
+            <p class="section-subtitle">
+                Discover amazing destinations across three unique categories. Each carousel showcases different locations within that category.
+            </p>
+            
+            <div class="categories">
+                <!-- Beach Destinations -->
+                <div class="category">
+                    <h3>Beach Destinations</h3>
+                    <div class="carousel" id="beach-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <h4>Bali</h4>
+                                <p>Indonesia</p>
+                                <p>Cultural richness & stunning artistic</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Maldives</h4>
+                                <p>Maldives</p>
+                                <p>Turquoise waters & overwater bungalows</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" data-carousel="beach" data-direction="-1">&#10094;</button>
+                        <button class="carousel-btn next" data-carousel="beach" data-direction="1">&#10095;</button>
+                    </div>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+                
+                <!-- Cabins & Nature Retreats -->
+                <div class="category">
+                    <h3>Cabins & Nature Retreats</h3>
+                    <div class="carousel" id="nature-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <h4>Aspen</h4>
+                                <p>Colorado, USA</p>
+                                <p>Luxury mountain lodges & pristine slopes</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Banff</h4>
+                                <p>Alberta, Canada</p>
+                                <p>Majestic peaks & turquoise lakes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" data-carousel="nature" data-direction="-1">&#10094;</button>
+                        <button class="carousel-btn next" data-carousel="nature" data-direction="1">&#10095;</button>
+                    </div>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+                
+                <!-- City Trips -->
+                <div class="category">
+                    <h3>City Trips</h3>
+                    <div class="carousel" id="city-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <h4>Dubai</h4>
+                                <p>UAE</p>
+                                <p>Futuristic skyline & luxury shopping</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Tokyo</h4>
+                                <p>Japan</p>
+                                <p>Ancient traditions & modern innovation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" data-carousel="city" data-direction="-1">&#10094;</button>
+                        <button class="carousel-btn next" data-carousel="city" data-direction="1">&#10095;</button>
+                    </div>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+            </div>
+            
+            <p class="carousel-instruction">
+                Use the arrow buttons to explore different destinations within each category
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                Ready to start planning your dream vacation? Contact us today and let's make it happen!
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <p><strong>Email</strong><br>hello@neotrips.com</p>
+                        <p><strong>Phone</strong><br>+1 (555) 123-4567</p>
+                        <p><strong>Address</strong><br>123 Travel Lane<br>Adventure City, AC 12345</p>
+                    </div>
+                    
+                    <div class="social">
+                        <h3>Follow Us</h3>
+                        <p>Connect with us on social media for travel inspiration and updates</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">f</a>
+                            <a href="#" class="social-link">in</a>
+                            <a href="#" class="social-link">ig</a>
+                            <a href="#" class="social-link">tw</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <p><strong>How far in advance should I book my trip?</strong></p>
+                    </div>
+                    <div class="faq-item">
+                        <p><strong>What payment methods do you accept?</strong></p>
+                    </div>
+                    <div class="faq-item">
+                        <p><strong>What is your cancellation policy?</strong></p>
+                    </div>
+                    <div class="faq-item">
+                        <p><strong>Do you offer travel insurance?</strong></p>
+                    </div>
+                    
+                    <div class="emergency-contact">
+                        <h3>Need Immediate Assistance?</h3>
+                        <p>Our travel experts are available 24/7 for urgent travel matters and emergency support during your trip.</p>
+                        <p><strong>Emergency Contact</strong><br>+1 (555) 987-6543</p>
+                        <p><strong>Business Hours</strong><br>Monday - Friday: 9am - 6pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Neo Trips Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
