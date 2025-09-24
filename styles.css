@@ -37,7 +37,7 @@ p {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 0; /* quitamos el height fijo que rompía el layout */
 }
 
 .btn {
@@ -64,7 +64,7 @@ section {
     padding: 4rem 0;
 }
 
-/* Header y Navegación */
+/* ==== HEADER Y NAVEGACIÓN ==== */
 header {
     background-color: var(--crema);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -78,41 +78,35 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 0.8rem 2rem;
 }
 
 .logo-img {
-    height: 60px;  /* ajusta el tamaño de tu logo */
-    width: auto;   /* mantiene proporción */
+    max-height: 100px; /* logo grande y claro */
+    width: auto;
     display: block;
+    object-fit: contain;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
 }
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-
-/* .nav-links {
-    display: flex;
-    list-style: none;
-} */
 
 .nav-links li {
-    margin-left: 2rem;
+    margin: 0;
 }
 
-/* .nav-links a {
+.nav-links a {
     text-decoration: none;
     color: var(--texto-oscuro);
     font-weight: 500;
-    transition: color 0.3s;
-} */
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
 
 .nav-links a:hover {
     color: var(--morado);
@@ -124,7 +118,7 @@ header {
     color: var(--texto-oscuro);
     text-align: center;
     padding: 10rem 0 6rem;
-    margin-top: 80px;
+    margin-top: 120px; /* más margen por header más alto */
 }
 
 .hero h1 {
@@ -424,7 +418,7 @@ footer {
     
     .hero {
         padding: 8rem 0 4rem;
-        margin-top: 120px;
+        margin-top: 150px;
     }
     
     .hero h1 {
@@ -466,7 +460,7 @@ footer {
         padding: 1rem 0;
     }
     
-    .logo svg {
-        width: 120px;
-    }
+    .logo-img {
+        max-height: 80px;
+    } 
 }
