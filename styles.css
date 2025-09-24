@@ -81,31 +81,38 @@ header {
     padding: 1rem 0;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+.logo-img {
+    height: 60px;  /* ajusta el tamaño de tu logo */
+    width: auto;   /* mantiene proporción */
+    display: block;
 }
-
-.logo svg {
-    width: 150px;
-    height: auto;
-}
-
 .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+
+/* .nav-links {
     display: flex;
     list-style: none;
-}
+} */
 
 .nav-links li {
     margin-left: 2rem;
 }
 
-.nav-links a {
+/* .nav-links a {
     text-decoration: none;
     color: var(--texto-oscuro);
     font-weight: 500;
     transition: color 0.3s;
-}
+} */
 
 .nav-links a:hover {
     color: var(--morado);
