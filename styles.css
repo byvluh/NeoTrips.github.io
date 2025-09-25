@@ -72,6 +72,10 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    height: 90px; /* más alto para el logo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar {
