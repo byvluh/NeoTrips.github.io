@@ -77,15 +77,15 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem 2rem;
+    align-items: center; /* centra logo y links */
+    padding: 0.5rem 2rem;
+    min-height: 120px; /* asegura que la barra no se achique */
 }
 
 .logo-img {
-    max-height: 100px; /* logo grande y claro */
+    max-height: 170px;  /* dale más altura */
     width: auto;
     display: block;
-    object-fit: contain;
 }
 
 .nav-links {
