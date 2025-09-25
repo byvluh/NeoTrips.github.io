@@ -476,25 +476,71 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .navbar {
-        flex-direction: column;
-        padding: 1rem 0;
+        padding: 0.5rem 1rem;
     }
     
     .nav-links {
-        margin-top: 1rem;
+        gap: 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .categories {
+        gap: 1.5rem;
+    }
+    
+    .category {
+        min-width: 220px;
+    }
+}
+
+/* Tablets pequeñas y móviles grandes (768px y menos) */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 0.5rem 0;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem 0;
+        min-height: auto;
+        width: 100%;
+    }
+    
+    .logo-img {
+        max-height: 120px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .nav-links {
+        margin-top: 0.5rem;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
     }
     
     .nav-links li {
-        margin: 0.5rem;
+        margin: 0.3rem;
+    }
+    
+    .nav-links a {
+        font-size: 1rem;
     }
     
     .hero {
         padding: 8rem 0 4rem;
-        margin-top: 150px;
+        margin-top: 140px;
     }
     
     .hero h1 {
@@ -503,25 +549,47 @@ footer {
     
     .hero p {
         font-size: 1rem;
+        padding: 0 1rem;
     }
     
     .categories {
         flex-direction: column;
         align-items: center;
+        gap: 1.5rem;
     }
     
     .category {
         width: 100%;
+        max-width: 100%;
     }
     
     .section-title {
         font-size: 2rem;
     }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .carousel {
+        height: 180px;
+    }
+    
+    .carousel-item h4 {
+        font-size: 1.1rem;
+    }
 }
 
+/* Móviles pequeños (480px y menos) */
 @media (max-width: 480px) {
     .hero {
         padding: 6rem 0 3rem;
+        margin-top: 130px;
     }
     
     .hero h1 {
@@ -533,12 +601,153 @@ footer {
     }
     
     .container {
-        padding: 1rem 0;
+        width: 95%;
+        padding: 0 0.5rem;
+    }
+    
+    .logo-img {
+        max-height: 100px;
+    }
+    
+    .nav-links {
+        gap: 0.8rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .carousel {
+        height: 160px;
+    }
+    
+    .carousel-item {
+        padding: 0.8rem;
+    }
+    
+    .carousel-item h4 {
+        font-size: 1rem;
+    }
+    
+    .carousel-item p {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .contact-details p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contact-details p strong {
+        min-width: auto;
+        margin-bottom: 0.3rem;
+    }
+    
+    .whatsapp-bubble {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .whatsapp-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Dispositivos muy pequeños (360px y menos) */
+@media (max-width: 360px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+    }
+    
+    .nav-links {
+        gap: 0.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.85rem;
     }
     
     .logo-img {
         max-height: 80px;
-    } 
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .carousel {
+        height: 140px;
+    }
+    
+    .carousel-item h4 {
+        font-size: 0.9rem;
+    }
+    
+    .carousel-item p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Orientación landscape en móviles */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 5rem 0 2rem;
+        margin-top: 120px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Pantallas muy grandes (más de 1440px) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.3rem;
+    }
 }
 
 .whatsapp-bubble {
