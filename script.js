@@ -101,3 +101,30 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Script para el acordeón de preguntas frecuentes
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.addEventListener('click', () => {
+            // Cierra todas las otras respuestas abiertas
+            faqItems.forEach(otherItem => {
+                const otherAnswer = otherItem.querySelector('.faq-answer');
+                const otherQuestion = otherItem.querySelector('.faq-question');
+
+                if (otherItem !== item) {
+                    otherAnswer.classList.remove('show');
+                    otherQuestion.classList.remove('active');
+                }
+            });
+
+            // Muestra o esconde la respuesta clicada
+            answer.classList.toggle('show');
+            question.classList.toggle('active');
+        });
+    });
+});
