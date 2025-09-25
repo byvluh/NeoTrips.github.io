@@ -1,8 +1,8 @@
 // Carousel functionality
 const carousels = {
-    beach: { currentIndex: 0, totalItems: 2 },
-    nature: { currentIndex: 0, totalItems: 2 },
-    city: { currentIndex: 0, totalItems: 2 }
+    beach: { currentIndex: 0, totalItems: 3 },
+    nature: { currentIndex: 0, totalItems: 3 },
+    city: { currentIndex: 0, totalItems: 3 }
 };
 
 // Function to move carousel
